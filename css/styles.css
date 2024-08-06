@@ -6,6 +6,8 @@
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --logo-black-color: #000000;
+  --header-border-color: #ececec;
+  --border-color: #eeeeee;
   --footer-bg-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
@@ -21,6 +23,8 @@ body {
 }
 
 /* ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 } */
 
@@ -33,10 +37,50 @@ h6 {
   color: #212121;
 } */
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Утилиты */
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+} /* можно сделать для ссылок (.link) */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Container */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Logo */
@@ -57,6 +101,12 @@ h6 {
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+/* Page header */
+
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Site nav и Contacts header */
@@ -89,14 +139,20 @@ h6 {
 
 .hero {
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -104,6 +160,11 @@ h6 {
 /* Button */
 
 .button {
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -121,11 +182,23 @@ h6 {
 
 /* Section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding-b {
+  padding-bottom: 0;
+}
+
 .section.secondary {
   background-color: var(--secondary-bg-color);
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-size: 36px;
@@ -138,6 +211,8 @@ h6 {
 /* Features */
 
 .features-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-size: 14px;
@@ -145,34 +220,60 @@ h6 {
   text-transform: uppercase;
 }
 
+.features-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Team */
 
+.team-list .worker {
+  padding: 30px 24px;
+  text-align: center;
+}
+
 .team-list .name {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
 }
 
+.team-list .position {
+  margin-bottom: 0;
+}
+
 .team-list .name,
 .team-list .position {
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 /* Page footer */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
 
 /* Address */
 
 .address {
+  margin-top: 20px;
   color: var(--primary-white-color);
   font-style: normal;
 }
 
 /* Contacts footer */
+
+.contacts-footer {
+  margin-top: 5px;
+}
+
+.contacts-footer > .item + .item {
+  margin-top: 5px;
+}
 
 .contacts-footer .link {
   color: var(--footer-contact-color);
@@ -188,7 +289,16 @@ h6 {
 
 /* Filter */
 
+.filter-list {
+  margin-bottom: 50px;
+}
+
 .filter-list .btn {
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   cursor: pointer;
@@ -208,7 +318,16 @@ h6 {
 
 /* Works */
 
+.works-list .content {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
 .works-list .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-size: 18px;
@@ -217,6 +336,8 @@ h6 {
 }
 
 .works-list .type {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
 }
