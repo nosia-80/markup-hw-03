@@ -20,9 +20,9 @@
   <body>
     <!-- Шапка страницы -->
     <header class="page-header">
-      <div class="container">
+      <div class="container inner">
         <!-- Основная навигация -->
-        <nav>
+        <nav class="main-nav">
           <!-- Логотип компании -->
           <a href="./index.html" class="logo" lang="en">
             <span class="logo-accent">Web</span>Studio
@@ -30,24 +30,26 @@
 
           <!-- Ссылки на другие страницы -->
           <ul class="site-nav list">
-            <li>
+            <li class="item">
               <a href="./index.html" class="link active" aria-current="page">
                 Студия
               </a>
             </li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Почта и телефон -->
         <ul class="contacts-header list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -73,28 +75,28 @@
           <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="features-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -110,22 +112,22 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
-          <ul class="list">
-            <li>
+          <ul class="gallery-list list">
+            <li class="item">
               <img
                 src="./images/img-1.jpg"
                 alt="Разработчик пишет код"
                 width="370"
               /><!-- в идеале указывать height -->
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-2.jpg"
                 alt="Разработчик создаёт кроссплатформенный сайт"
                 width="370"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-3.jpg"
                 alt="Разработчик выбирает палитру"
@@ -142,7 +144,7 @@
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="team-list list">
-            <li>
+            <li class="card">
               <img
                 src="./images/photo-1.jpg"
                 alt="Фото Игоря Демьяненко"
@@ -153,7 +155,7 @@
                 <p class="position" lang="en">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/photo-2.jpg"
                 alt="Фото Ольги Репиной"
@@ -164,7 +166,7 @@
                 <p class="position" lang="en">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/photo-3.jpg"
                 alt="Фото Николая Тарасова"
@@ -175,7 +177,7 @@
                 <p class="position" lang="en">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/photo-4.jpg"
                 alt="Фото Михаила Ермакова"
